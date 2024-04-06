@@ -8,7 +8,7 @@ const PesquisaContainer = styled.section`
     color: #FFF;
     text-align: center;
     padding: 85px 0;
-    height: 270px;
+    height: 100%;
     width: 100%;
 `
 
@@ -59,7 +59,7 @@ function Pesquisa() {
             />
             { livrosPesquisados.map( livro => (
                 <Resultado>
-                    <img src={livro.src}/>
+                    <img src={livro.src} alt='livro'/>
                     <p>{livro.nome}</p>
                 </Resultado>
             )) }
